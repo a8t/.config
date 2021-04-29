@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "create-next-app": "^10.0.5",
-    "graphql": "^14.6.0",
-    "graphql-cli": "^4.0.1-beta.2"
-  }
-}
