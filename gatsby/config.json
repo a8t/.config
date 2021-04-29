@@ -1,0 +1,16 @@
+{
+	"telemetry": {
+		"enabled": true,
+		"machineId": "3df9cd18-10c0-4015-a23e-0878e4ac12a1"
+	},
+	"cli": {
+		"packageManager": "yarn"
+	},
+	"feedback": {
+		"firstCheckDate": 1608514490522,
+		"lastRequestDate": 1608713429728
+	},
+	"lastExperimentNotice": {
+		"Preserve webpack's Cache": 1608704304652
+	}
+}
