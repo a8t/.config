@@ -59,9 +59,9 @@ function gitignore
 	touch .gitignore; and echo "node_modules/" >> .gitignore
 end
 
-function nvm
-      bass source ~/.nvm/nvm.sh ';' nvm $argv
-  end
+# function nvm
+#       bass source ~/.nvm/nvm.sh ';' nvm $argv
+#   end
 abbr finder 'open ./'
 
 function getlocalip
@@ -82,7 +82,6 @@ set -gx PATH $PATH $HOME/dev/ddcctl
 bind \e\[1\;5C forward-word
 bind \e\[1\;5D backward-word
 
-thefuck --alias | source
 
 
 source /usr/local/Cellar/asdf/0.8.0/asdf.fish
