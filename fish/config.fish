@@ -71,6 +71,7 @@ end
 abbr sethost 'set -x HOST (eval getlocalip)'
 
 set -gx PATH $HOME/.cargo/bin $PATH
+set -gx PATH $PATH /opt/homebrew/bin
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
 set -gx PATH $PATH $ANDROID_HOME/emulator
 set -gx PATH $PATH $ANDROID_HOME/emulator/emulator
@@ -84,4 +85,4 @@ bind \e\[1\;5D backward-word
 
 
 
-source /usr/local/Cellar/asdf/0.8.0/asdf.fish
+source /opt/homebrew/Cellar/asdf/0.8.1_1/asdf.fish
