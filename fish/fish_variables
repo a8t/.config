@@ -12,6 +12,7 @@ SETUVAR _fish_abbr_a_2E_:code
 SETUVAR _fish_abbr_andc:and\x20c\x20\x24_
 SETUVAR _fish_abbr_back:c\x20\x2d
 SETUVAR _fish_abbr_cdrop:c\x20/Users/andytran/Documents/dropbike/drop
+SETUVAR _fish_abbr_chrome:/Applications/Google\x5c\x20Chrome\x2eapp/Contents/MacOS/Google\x5c\x20Chrome
 SETUVAR _fish_abbr_finder:open\x20\x2e/
 SETUVAR _fish_abbr_fishrc:code\x20\x7e/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_ga:git\x20add\x20\x2e/

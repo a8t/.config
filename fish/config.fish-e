@@ -79,28 +79,10 @@ set -gx PATH $PATH $ANDROID_HOME/tools
 set -gx PATH $PATH $ANDROID_HOME/tools/bin
 set -gx PATH $PATH $ANDROID_HOME/platform-tools
 set -gx PATH $PATH $HOME/dev/ddcctl
-set -gx PATH $PATH $HOME/bin
 
 bind \e\[1\;5C forward-word
 bind \e\[1\;5D backward-word
 
 
 
-source /opt/homebrew/Cellar/asdf/0.9.0/asdf.fish
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/andy/.ghcup/bin $PATH # ghcup-env
-
-function naboo_logs
- if test (count $argv) -lt 1
-     kubectl logs --tail 300 -n naboo -f (kubectl get pod -l "app=naboo-staging" -o name -n naboo | sed "s/pod\///" | head -n 1) -c naboo
- else
-     kubectl logs --tail 300 -n naboo -f (kubectl get pod -l "app=naboo-$argv[1]" -o name -n naboo | sed "s/pod\///" | head -n 1) -c naboo
- end
-end
-
-function naboo_console
- if test (count $argv) -lt 1
-     kubectl exec -n naboo -it (kubectl get pod -l "app=naboo-staging" -o name -n naboo | sed "s/pod\///" | head -n 1) -c naboo -- /opt/app/bin/naboo remote 
- else
-     kubectl exec -n naboo -it (kubectl get pod -l "app=naboo-$argv[1]" -o name -n naboo | sed "s/pod\///" | head -n 1) -c naboo -- /opt/app/bin/naboo remote 
- end
-end
+source /opt/homebrew/Cellar/asdf/0.8.1_1/asdf.fish
